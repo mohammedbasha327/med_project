@@ -1,0 +1,12 @@
+html
+    head
+        title Verification
+    body
+        h1 Please enter the phone number and the token given to you:
+        form(action="/Verify" method="post")
+            p Phone Number : 
+                input(type="number" name="phoneNo" placeholder="Phone number goes here" required="")
+            p Generated Token :  
+                input(type="text" name="inputToken" placeholder="Enter the token" required="") 
+            input(type="Submit" value="Verify & create a session")
+
